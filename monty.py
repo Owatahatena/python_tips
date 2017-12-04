@@ -3,15 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-
-def minn(doors):
-    return min(doors)
-
-def maxx(doors):
-    return max(doors)
-
 def hazure_open(ans):
-    hazure = random.randint(0,1)
+    hazure = random.randint(0,2)
 
     while hazure == ans:
         hazure = random.randint(0,2)
@@ -49,7 +42,7 @@ def montty(doors):
         return 0,0
 
 
-def plott(first_choicelist,re_choicelist):
+def plot(first_choicelist,re_choicelist):
     x = np.arange(0, 5000, 500)
 
     # 計算式
@@ -100,7 +93,7 @@ def main():
 
     c = b -a
 
-    plott(first_choicelist,re_choicelist)
+    plot(first_choicelist,re_choicelist)
 
     print(first_choicelist)
 
